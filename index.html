@@ -2,24 +2,355 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>家电半年报问答知识库 · 跳转中</title>
-<meta http-equiv="refresh" content="0; url=site/index.html">
-<link rel="canonical" href="site/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家电行业 2026 半年报问答知识库 · 实验回放</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<meta name="description" content="15 家 A 股家电公司 2026 年半年报问答知识库：5876 个文本块，向量+BM25 双索引，10 道题的召回明细与对错记录。">
 <style>
-  body{font:15px/1.8 "Segoe UI","Microsoft YaHei",sans-serif;color:#1c1f23;background:#f6f7f9;
-       display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
-  div{background:#fff;border:1px solid #e3e6ea;border-radius:12px;padding:26px 32px;max-width:560px}
-  h1{font-size:17px;margin:0 0 10px}
-  p{color:#5b6470;font-size:14px;margin:6px 0}
-  a{color:#1f6feb}
-  code{background:#f1f3f6;padding:1px 5px;border-radius:4px;font-size:13px}
+  :root{
+    --bg:#f6f7f9; --card:#fff; --ink:#1c1f23; --ink2:#5b6470; --ink3:#8b95a1;
+    --line:#e3e6ea; --accent:#1f6feb; --accent-soft:#eaf1fe;
+    --ok:#137a4b; --ok-bg:#e9f6ef; --part:#a35a00; --part-bg:#fdf3e3;
+    --bad:#b42318; --bad-bg:#fdecea; --table:#7a4fd6; --text:#1f6feb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.7 "Segoe UI","Microsoft YaHei",system-ui,sans-serif}
+  a{color:var(--accent)}
+  header{background:var(--card);border-bottom:1px solid var(--line);padding:13px 22px;
+         display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:9}
+  header h1{font-size:16.5px;margin:0;font-weight:650;letter-spacing:.2px}
+  .badge{font-size:11.5px;color:var(--part);background:var(--part-bg);border:1px solid #f0dcbb;
+         border-radius:999px;padding:1px 10px}
+  header .links{margin-left:auto;display:flex;gap:14px;font-size:13px}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 22px 70px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+        box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  h2{font-size:15px;margin:26px 0 10px;font-weight:650}
+  .hero{padding:22px 24px}
+  .hero .lead{font-size:15.5px;line-height:1.75;margin:0}
+  .hero .lead b{color:#1a4fa0}
+  .kpis{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+  .kpi{flex:1;min-width:190px;background:#fafbfc;border:1px solid #e6e9ee;border-radius:9px;padding:10px 13px}
+  .kpi b{display:block;font-size:19px;color:var(--accent);line-height:1.3}
+  .kpi span{font-size:12px;color:var(--ink3)}
+  /* 回放区 */
+  .demo{display:grid;grid-template-columns:308px 1fr;gap:16px;align-items:start}
+  @media (max-width:900px){.demo{grid-template-columns:1fr}}
+  .qlist{padding:8px}
+  .qitem{padding:9px 11px;border-radius:9px;cursor:pointer;border:1px solid transparent;margin-bottom:3px}
+  .qitem:hover{background:#f4f7fb}
+  .qitem.on{background:var(--accent-soft);border-color:#cfe0fa}
+  .qitem .t{font-size:11.5px;color:var(--ink3)}
+  .qitem .q{font-size:13px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;
+            -webkit-box-orient:vertical;overflow:hidden}
+  .qitem .v{font-size:11.5px;font-weight:600}
+  .panel{padding:0}
+  .phead{padding:12px 18px;border-bottom:1px solid var(--line);display:flex;gap:10px;
+         align-items:center;flex-wrap:wrap}
+  .phead .q{font-size:14px;font-weight:600;flex:1;min-width:260px}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{border:0;background:#fff;padding:5px 12px;font:inherit;font-size:12.5px;
+              color:var(--ink2);cursor:pointer;border-right:1px solid var(--line)}
+  .seg button:last-child{border-right:0}
+  .seg button.on{background:var(--accent-soft);color:var(--accent);font-weight:650}
+  .vbadge{font-size:12.5px;font-weight:650;border-radius:999px;padding:2px 11px;white-space:nowrap}
+  .v-ok{color:var(--ok);background:var(--ok-bg)}
+  .v-part{color:var(--part);background:var(--part-bg)}
+  .v-bad{color:var(--bad);background:var(--bad-bg)}
+  .pbody{padding:14px 18px}
+  .meta{font-size:12.5px;color:var(--ink3);margin-bottom:8px}
+  table{border-collapse:collapse;width:100%;font-size:12.8px;margin:8px 0 12px}
+  th,td{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+  th{background:#f2f5f9;font-weight:600}
+  .answer{white-space:normal}
+  .answer h3{font-size:14px;margin:12px 0 5px}
+  .answer h4{font-size:13px;margin:10px 0 4px;color:var(--ink2)}
+  .answer p{margin:6px 0}
+  .answer li{margin:3px 0}
+  .answer code{background:#f1f3f6;border-radius:3px;padding:0 3px;font-size:12.5px}
+  .cite{display:inline-block;min-width:19px;text-align:center;background:var(--accent-soft);
+        color:var(--accent);border-radius:5px;font-size:12px;padding:0 4px;margin:0 2px;
+        font-weight:600;cursor:pointer;line-height:17px}
+  .cite:hover{background:var(--accent);color:#fff}
+  .verdict{border-left:3px solid var(--accent);background:#f8fbff;border-radius:0 8px 8px 0;
+           padding:9px 13px;margin-bottom:12px;font-size:13.5px}
+  .verdict .line{margin:3px 0}
+  .verdict .k{color:var(--ink3)}
+  .hit{border:1px solid var(--line);border-radius:10px;margin:8px 0;overflow:hidden}
+  .hit.hl{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .hitHead{display:flex;gap:9px;align-items:center;padding:8px 12px;background:#fbfcfd;
+           cursor:pointer;flex-wrap:wrap;font-size:13px}
+  .rank{width:21px;height:21px;border-radius:6px;background:var(--ink);color:#fff;font-size:11.5px;
+        display:flex;align-items:center;justify-content:center;font-weight:600;flex:none}
+  .gold{background:var(--ok);}
+  .co{font-weight:650}
+  .tags{color:var(--ink3);font-size:12.5px}
+  .kind{font-size:11.5px;border-radius:5px;padding:1px 7px;border:1px solid var(--line)}
+  .kind.table{color:var(--table);border-color:#e2d8f8;background:#f8f5ff}
+  .kind.text{color:var(--text);border-color:#d8e6fb;background:#f4f8ff}
+  .scores{margin-left:auto;color:var(--ink3);font-size:12px;font-variant-numeric:tabular-nums}
+  .scores b{color:var(--ink2);font-weight:600}
+  .hitBody{padding:0 13px 12px;display:none;color:#33383f;font-size:13px;white-space:pre-wrap;
+           max-height:320px;overflow:auto;font-family:"Cascadia Mono",Consolas,monospace}
+  .hit.open .hitBody{display:block}
+  #map{width:100%;height:520px;display:block}
+  .legend{display:flex;gap:12px;flex-wrap:wrap;padding:0 18px 14px;font-size:12.5px;color:var(--ink2)}
+  .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+  .hint{font-size:12.5px;color:var(--ink3)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:820px){.cols{grid-template-columns:1fr}}
+  .box{padding:14px 18px;font-size:13.5px}
+  .box ul{margin:6px 0 0 18px;padding:0}
+  .box li{margin:5px 0}
+  footer{color:var(--ink3);font-size:12.5px;text-align:center;padding:26px 20px 40px}
+  .err{color:var(--bad)}
 </style>
 </head>
 <body>
-<div>
+<header>
   <h1>家电行业 2026 半年报问答知识库</h1>
-  <p>静态演示页在 <a href="site/index.html">site/index.html</a>，正在跳转……</p>
-  <p>没自动跳转就点上面的链接；把 Vercel 的 <code>Root Directory</code> 设成 <code>site</code> 可以省掉这一跳。</p>
+  <span class="badge">静态实验回放 · 不联网、不含密钥</span>
+  <div class="links">
+    <a href="assets/一页结论.pdf" target="_blank">一页结论 PDF</a>
+    <a href="assets/截图1_答对带出处.png" target="_blank">截图1</a>
+    <a href="assets/截图2_跨公司题翻车.png" target="_blank">截图2</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="card hero">
+    <p class="lead" id="lead">加载中……</p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+
+  <h2>10 道题 · 逐题回放（含召回明细与判定）</h2>
+  <div class="demo">
+    <div class="card qlist" id="qlist"></div>
+    <div class="card panel" id="panel"></div>
+  </div>
+
+  <h2>文本块星空图</h2>
+  <div class="card">
+    <div class="phead"><span class="q">5876 个文本块降维到二维，一座小岛 ≈ 一家公司</span>
+      <span class="hint">点任意一处看该块原文（前 140 字）</span></div>
+    <canvas id="map"></canvas>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <h2>这套东西是怎么做出来的</h2>
+  <div class="cols">
+    <div class="card box">
+      <b>流水线</b>
+      <ul>
+        <li>巨潮资讯网下载 15 家家电公司 2026 半年报全文（2588 页 / 310 万字）</li>
+        <li>PyMuPDF 提取正文与表格（3852 张表按行列还原，保留页码）</li>
+        <li>切块 800 字 / 重叠 120 字 / 句末收尾，每块带<b>公司·章节·页码·块序号</b></li>
+        <li>本地 Qwen3-Embedding-0.6B 算 1024 维向量 + jieba/BM25 倒排，RRF 合并</li>
+        <li>DeepSeek 只依据召回材料作答，逐句标 [编号] 出处</li>
+      </ul>
+    </div>
+    <div class="card box">
+      <b>三个结论</b>
+      <ul>
+        <li><b>点状事实建库就够</b>：单公司题 5/5 全对，两种检索模式无差别</li>
+        <li><b>跨公司题要加检索侧工程</b>：一句话三家公司的问法会把召回名额占满，
+            改成「LLM 抽关键词 + 按公司分组保底召回」后 5/10 → 8/10</li>
+        <li><b>微调留给习惯</b>：数字全部来自检索（0 编造），真正该进权重的是
+            「先结论后依据、每句带出处、金额统一口径」这类每次都要重复的格式</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>为什么 Vercel 上只能放静态版</h2>
+  <div class="card box">
+    <p style="margin:0">本地那套问答依赖三样在静态托管里跑不了的东西：<b>1.2 GB 的向量模型</b>、
+      <b>numpy 索引与 jieba 倒排</b>、<b>带密钥的模型调用</b>。所以这个站点展示的是
+      <b>本地真实运行结果的回放</b>（回答、召回明细、排名、判定全部原样来自运行日志，未做修改）；
+      想在线提问需要自建后端（Vercel 函数 + 嵌入服务 + 密钥托管），并且要注意费用与密钥安全。</p>
+  </div>
+
+  <footer>
+    材料：15 家 A 股家电上市公司 2026 年半年度报告全文 · 数据源 巨潮资讯网 cninfo.com.cn<br>
+    《人工智能与数据分析》W3 作业 · 方向 A · 页面为静态回放，所有数字均来自本机运行日志
+  </footer>
 </div>
+
+<script>
+/* ---------- 小工具 ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+/* 极简 Markdown 渲染：标题 / 表格 / 列表 / 加粗 / 行内代码 / 引用编号（不引外部库） */
+function md(src){
+  const lines = (src || "").split("\n");
+  let out = [], i = 0;
+  const inline = t => esc(t)
+      .replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\[(\d{1,2})\]/g, '<span class="cite" data-r="$1">[$1]</span>');
+  const isTable = k => k + 1 < lines.length && /^\|[\s:|-]+\|$/.test(lines[k + 1].trim());
+  while (i < lines.length){
+    const l = lines[i].trim();
+    if (!l){ i++; continue; }
+    if (isTable(i)){
+      const cells = r => r.trim().replace(/^\||\|$/g,"").split("|").map(x => x.trim());
+      const head = cells(lines[i]); i += 2;
+      let body = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")){ body.push(cells(lines[i])); i++; }
+      out.push("<table><tr>" + head.map(h => `<th>${inline(h)}</th>`).join("") + "</tr>"
+        + body.map(r => "<tr>" + r.map(c => `<td>${inline(c)}</td>`).join("") + "</tr>").join("")
+        + "</table>");
+      continue;
+    }
+    if (/^#{2,4} /.test(l)){ const n = l.match(/^#+/)[0].length + 1;
+      out.push(`<h${n}>${inline(l.replace(/^#+ /,""))}</h${n}>`); i++; continue; }
+    if (/^[-*] /.test(l)){ let li = [];
+      while (i < lines.length && /^\s*[-*] /.test(lines[i])){ li.push(`<li>${inline(lines[i].trim().slice(2))}</li>`); i++; }
+      out.push("<ul>" + li.join("") + "</ul>"); continue; }
+    if (/^\d+\. /.test(l)){ let li = [];
+      while (i < lines.length && /^\s*\d+\. /.test(lines[i])){ li.push(`<li>${inline(lines[i].trim().replace(/^\d+\.\s*/,""))}</li>`); i++; }
+      out.push("<ol>" + li.join("") + "</ol>"); continue; }
+    if (/^> /.test(l)){ out.push(`<blockquote>${inline(l.slice(2))}</blockquote>`); i++; continue; }
+    out.push(`<p>${inline(l)}</p>`); i++;
+  }
+  return out.join("");
+}
+function verdictClass(v){
+  if (!v) return "v-part";
+  if (v.includes("错") && !v.includes("部分")) return "v-bad";
+  if (v.includes("部分") || v.includes("半对") || v.includes("只答对一半") || /仅|4\/15|5\/15/.test(v)) return "v-part";
+  return "v-ok";
+}
+
+/* ---------- 状态 ---------- */
+let DATA = null, CUR = 1, MODE = "hybrid";
+
+/* ---------- 渲染 ---------- */
+fetch("demo.json").then(r => r.json()).then(d => {
+  DATA = d;
+  const s = d.stats;
+  $("#lead").innerHTML = "同一批财报里，<b>「谁在哪一页说了什么」的事实适合建库</b>"
+    + "——知识会更新、答案要溯源、一次检索就能答对（单公司题 5/5 全对）；"
+    + "<b>而「每次都用同一套格式和口径作答」的习惯才适合微调</b>——它不随财报更新，却是最该写进权重的东西。";
+  $("#kpis").innerHTML = [
+    [s.n_companies + " 家 / " + s.pages + " 页", "家电上市公司 2026 半年报全文（" + s.chars_wan + " 万字 / " + s.tables + " 张表）"],
+    [s.n_chunks.toLocaleString() + " 块", "文本块（正文 " + s.n_text + " + 表格 " + s.n_table + "），" + s.dim + " 维向量 + BM25"],
+    ["5/10 → 8/10", "10 道题严格答对的题数：基本混合 → 抽词+分组"],
+    ["10/10", "回答中每一句都带出处编号，0 处编造"],
+  ].map(([b, t]) => `<div class="kpi"><b>${b}</b><span>${t}</span></div>`).join("");
+  $("#qlist").innerHTML = d.questions.map(q =>
+    `<div class="qitem" data-id="${q.id}">
+       <div class="t">Q${q.id} · ${q.type}</div>
+       <div class="q">${esc(q.q)}</div>
+       <div class="v ${verdictClass(q.verdict)}">${esc(q.verdict)}</div>
+     </div>`).join("");
+  $("#qlist").onclick = e => {
+    const it = e.target.closest(".qitem"); if (!it) return;
+    CUR = +it.dataset.id; render();
+  };
+  render();
+}).catch(e => { $("#lead").innerHTML = `<span class="err">数据加载失败：${e}（请用本地服务器打开，file:// 不能 fetch）</span>`; });
+
+function render(){
+  const q = DATA.questions.find(x => x.id === CUR);
+  document.querySelectorAll(".qitem").forEach(el =>
+    el.classList.toggle("on", +el.dataset.id === CUR));
+  if (!q.modes[MODE]) MODE = Object.keys(q.modes)[0] || "hybrid";
+  const m = q.modes[MODE];
+  const seg = Object.entries(q.modes).map(([k, v]) =>
+    `<button data-m="${k}" class="${k === MODE ? "on" : ""}">${v.label}</button>`).join("");
+  const rank = ["vector","bm25","hybrid","rewrite","hybrid+分组","抽词+分组"]
+    .filter(k => q.recall[k])
+    .map(k => {
+      const r = q.recall[k];
+      const cls = r.hit ? (r.first <= 3 ? "v-ok" : "v-part") : "v-bad";
+      return `<tr><td>${k}</td><td class="${cls}">${r.hit ? "第 " + r.first + " 名" : "未命中"}</td>`
+           + `<td>${r.ncomp} 家</td><td class="tags">${(r.companies || []).join("、")}</td></tr>`;
+    }).join("");
+  $("#panel").innerHTML = `
+    <div class="phead">
+      <span class="q">Q${q.id} · ${esc(q.q)}</span>
+      <span class="vbadge ${verdictClass(q.verdict)}">${esc(q.verdict)}</span>
+    </div>
+    <div class="pbody">
+      ${q.right || q.wrong || q.why ? `<div class="verdict">
+        ${q.right ? `<div class="line"><span class="k">答对的部分：</span>${esc(q.right)}</div>` : ""}
+        ${q.wrong ? `<div class="line"><span class="k">错/漏的部分：</span>${esc(q.wrong)}</div>` : ""}
+        ${q.why ? `<div class="line"><span class="k">原因：</span>${esc(q.why)}</div>` : ""}
+      </div>` : ""}
+      <div class="meta">检索模式：
+        <span class="seg" id="seg">${seg}</span>
+        &nbsp;·&nbsp; 召回 ${m.hits.length} 块 · 用时 ${m.seconds}s · ${m.tokens || "—"} tokens
+      </div>
+      <table><tr><th>检索模式</th><th>首个答案块排名</th><th>覆盖公司</th><th>命中的公司</th></tr>${rank}</table>
+      <div class="answer">${md(m.answer)}</div>
+      <div class="meta" style="margin-top:14px">召回明细（排名棕色 = 标准答案块；点条目展开原文）</div>
+      ${m.hits.map(h => `
+        <div class="hit" id="hit${h.rank}">
+          <div class="hitHead">
+            <span class="rank ${q.gold.includes(h.id) ? "gold" : ""}">${h.rank}</span>
+            <span class="co">${esc(h.company)}</span>
+            <span class="tags">${esc(h.section)} · 第 ${h.page} 页</span>
+            <span class="kind ${h.kind}">${h.kind === "table" ? "表格" : "正文"}</span>
+            <span class="scores">向量 <b>${h.sim.toFixed(3)}</b> · BM25 <b>${h.bm25}</b></span>
+          </div>
+          <div class="hitBody">${esc(h.text)}</div>
+        </div>`).join("")}
+    </div>`;
+  $("#seg").onclick = e => {
+    const b = e.target.closest("button"); if (!b) return;
+    MODE = b.dataset.m; render();
+  };
+  $("#panel").addEventListener("click", e => {
+    const hh = e.target.closest(".hitHead");
+    if (hh){ hh.parentElement.classList.toggle("open"); return; }
+    const c = e.target.closest(".cite");
+    if (c){
+      const el = $("#hit" + c.dataset.r);
+      if (el){ el.classList.add("open", "hl"); el.scrollIntoView({behavior:"smooth", block:"center"}); }
+    }
+  });
+}
+
+/* ---------- 星空图 ---------- */
+let MAP = null, MAPPED = false;
+fetch("map.json").then(r => r.json()).then(m => { MAP = m; MAPPED = true; drawMap();
+  $("#legend").innerHTML = m.companies.map((c, i) =>
+    `<span><i style="background:${m.colors[i % m.colors.length]}"></i>${c}</span>`).join("");
+}).catch(() => { $("#map").style.display = "none"; });
+
+function drawMap(){
+  if (!MAPPED) return;
+  const cv = $("#map"), dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const g = cv.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const pts = MAP.points;
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const pad = 16, sx = (W - 2 * pad) / (x1 - x0 || 1), sy = (H - 2 * pad) / (y1 - y0 || 1);
+  g.clearRect(0, 0, W, H);
+  pts.forEach(p => {
+    const X = pad + (p[0] - x0) * sx, Y = H - pad - (p[1] - y0) * sy;
+    g.beginPath(); g.arc(X, Y, p[3] ? 1.7 : 1.3, 0, 7);
+    g.fillStyle = MAP.colors[p[2] % MAP.colors.length] + (p[3] ? "aa" : "cc"); g.fill();
+  });
+  cv.onclick = ev => {
+    const rect = cv.getBoundingClientRect();
+    const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
+    let best = null, bd = 1e9;
+    pts.forEach(p => {
+      const X = pad + (p[0] - x0) * sx, Y = H - pad - (p[1] - y0) * sy;
+      const d = (X - mx) ** 2 + (Y - my) ** 2; if (d < bd){ bd = d; best = p; }
+    });
+    if (best && bd < 400){
+      alert(`${MAP.companies[best[2]]}\n块 id：${best[4]}\n\n${best[5]}…`);
+    }
+  };
+}
+window.addEventListener("resize", drawMap);
+</script>
 </body>
 </html>

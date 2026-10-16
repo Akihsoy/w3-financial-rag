@@ -12,11 +12,11 @@ r"""
 × 召回明细 + 召回评测 + 星空图）固化成一堆 json，页面只做展示和回放，
 不联网、不需要 key。要真·在线提问，得自己加后端（见 site/README_部署.md）。
 
-产物（全部在 site/ 下，Vercel 把 Root Directory 设成 site 即可）：
-    site/index.html      页面（手写，随仓库一起版本管理）
-    site/demo.json       10 道题的回答 + 召回明细 + 判卷 + 召回评测
-    site/map.json        星空图坐标（5876 个点，带 140 字预览）
-    site/assets/         一页结论 PDF 与两张截图
+产物（都放仓库根目录，Vercel / GitHub Pages 零配置即可打开）：
+    index.html      页面（手写，随仓库一起版本管理）
+    demo.json       10 道题的回答 + 召回明细 + 判卷 + 召回评测
+    map.json        星空图坐标（5876 个点，带 140 字预览）
+    assets/         一页结论 PDF 与两张截图
 
 用法：python scripts/11_build_site.py
 """
@@ -26,7 +26,7 @@ import shutil
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = os.path.join(ROOT, "site")
+SITE = ROOT                     # 页面和它的数据直接放仓库根目录（Vercel 零配置就能跑）
 ASSETS = os.path.join(SITE, "assets")
 
 PREVIEW_CHARS = 140          # 星空图里每个块带的预览字数
@@ -99,7 +99,7 @@ def main():
     json.dump({"stats": stats, "questions": items},
               open(os.path.join(SITE, "demo.json"), "w", encoding="utf-8"),
               ensure_ascii=False, separators=(",", ":"))
-    print(f"site/demo.json  {len(items)} 道题")
+    print(f"demo.json  {len(items)} 道题")
 
     # 星空图：坐标 + 公司序号 + 类型 + 块 id + 预览
     m = load("data/map.json", {"points": [], "companies": [], "colors": []})
@@ -111,7 +111,7 @@ def main():
     json.dump({"companies": m["companies"], "colors": m["colors"], "points": pts},
               open(os.path.join(SITE, "map.json"), "w", encoding="utf-8"),
               ensure_ascii=False, separators=(",", ":"))
-    print(f"site/map.json   {len(pts)} 个点")
+    print(f"map.json   {len(pts)} 个点")
 
     # 资产
     for src, dst in [("results/一页结论.pdf", "一页结论.pdf"),
@@ -125,7 +125,7 @@ def main():
             print(f"  [跳过] 缺 {src}")
 
     print(f"\n完成：{SITE}")
-    print("本地预览：cd site && python -m http.server 8080  -> http://127.0.0.1:8080")
+    print("本地预览：在本目录跑 python -m http.server 8080  -> http://127.0.0.1:8080")
 
 
 if __name__ == "__main__":

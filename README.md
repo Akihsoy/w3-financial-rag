@@ -51,6 +51,11 @@ python scripts/07_serve.py        # 打开 http://127.0.0.1:8765
 ## 目录
 
 ```
+index.html           静态演示页（放 Vercel / GitHub Pages 零配置就能开；
+                     逐题回放 10 道题的回答、召回明细与判定，含文本块星空图）
+demo.json            上面这个页面读的数据：10 题 × 2 种检索模式的回答与召回记录
+map.json             星空图坐标（5876 个块，带 140 字预览）
+assets/              一页结论 PDF 与两张页面截图（页面顶栏的链接指向这里）
 scripts/
   01_download.py     从巨潮资讯网下载年报/半年报 PDF（巨潮一个接口覆盖沪深两市）
   02_extract.py      PDF → 带页码的正文 + 按行列还原的表格（PyMuPDF find_tables）
@@ -58,11 +63,15 @@ scripts/
   04_embed.py        本机 Qwen3-Embedding-0.6B 编码，支持断点续跑
   05_index_bm25.py   jieba 分词 + BM25 倒排
   06_ask.py          命令行问答 / 批量出题，把召回明细落盘（做实验记录用）
-  07_serve.py        标准库 http.server，一条命令起网页；四种检索模式可切换
+  07_serve.py        标准库 http.server，一条命令起本地实时问答网页
+  08_eval_retrieval.py  召回评测（人标标准答案块，量首个答案块排名）
+  09_make_map.py     文本块星空图（PCA + t-SNE）
+  10_build_report.py 汇总生成《逐题记录》
+  11_build_site.py   生成根目录的 demo.json 与 map.json（静态演示页的数据）
   retrieval.py       检索与回答的公共模块（向量 / BM25 / RRF / DeepSeek 作答）
-web/index.html       问答页面（提问、召回明细、带出处回答、文本块星空图）
+web/index.html       本地实时问答页（连 07_serve.py 的后端，四种检索模式可切换）
 data/questions.json  10 道测试题（含 4 道跨公司全景题）
-results/             逐题记录与实验数据
+results/             逐题记录、召回评测、原始问答日志、判卷
 ```
 
 PDF 与中间产物（`data/pdf`、`data/emb.npy` 等）不入库——`01_download.py` 一条命令就能重新拉回来。
