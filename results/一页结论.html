@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>一页结论 · 家电半年报问答库</title>
+<style>
+  @page { size: A4; margin: 10mm 11mm; }
+  body { font: 9.4pt/1.38 "Microsoft YaHei","Segoe UI",sans-serif; color:#1c1f23; margin:0; }
+  h1 { font-size: 14pt; margin: 0 0 1px; }
+  .sub { color:#5b6470; font-size: 7.9pt; margin-bottom: 5px; }
+  h2 { font-size: 10.3pt; margin: 7px 0 3px; padding-left: 6px; border-left: 3px solid #1f6feb; }
+  p { margin: 3px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 8.4pt; margin-top: 2px; }
+  th, td { border: 1px solid #d9dde3; padding: 1.9px 5px; text-align: left; }
+  th { background: #f2f5f9; font-weight: 600; }
+  .ok { color: #137a4b; font-weight: 600; } .part { color: #a35a00; font-weight: 600; }
+  .bad { color: #b42318; font-weight: 600; }
+  .box { background: #f5f8fd; border: 1px solid #cfe0fa; border-radius: 6px; padding: 6px 10px; margin: 6px 0 4px; }
+  ul { margin: 3px 0 3px 16px; padding: 0; } li { margin: 1.5px 0; }
+  code { background:#f1f3f6; padding: 0 3px; border-radius: 3px; font-size: 8.2pt; }
+  .tiny { color:#6b7280; font-size: 7.6pt; }
+  .kpi { display:flex; gap:11px; margin: 4px 0 2px; }
+  .kpi div { flex:1; background:#fafbfc; border:1px solid #e6e9ee; border-radius:6px; padding:4px 8px; }
+  .kpi b { display:block; font-size:11pt; color:#1f6feb; }
+</style>
+</head>
+<body>
+
+<h1>同一批财报：什么问题该建库，什么问题该微调</h1>
+<div class="sub">《人工智能与数据分析》W3 作业·方向 A ｜ 语料：15 家 A 股家电公司 2026 年半年度报告全文（2,588 页 / 310 万字 / 3,852 张表 → 切 5,876 块）｜ 检索：本地 Qwen3-Embedding-0.6B 向量 + jieba/BM25 双路 ｜ 回答：DeepSeek，逐句带出处 ｜ 2026-10-16</div>
+
+<h2>一、做了什么</h2>
+<p>从巨潮资讯网下载 15 家家电公司（美的、格力、海尔智家、海信家电、TCL智家、长虹美菱、苏泊尔、九阳、老板电器、华帝、小熊、新宝、石头科技、科沃斯、飞科）的 2026 年半年报全文；按课件口径切块（<b>800 字 / 重叠 120 字 / 句末收尾</b>，每块带<b>公司·章节·页码·块序号</b>四标签，表格按行列还原、每块重复表头）；建向量 + BM25 双索引，做成可提问、答案带出处的网页；出 10 道题（4 道跨公司）逐题记录召回与对错。</p>
+
+<div class="kpi">
+  <div><b>5/10 → 8/10</b><span class="tiny">严格答对的题数：基本混合 → 抽词+分组</span></div>
+  <div><b>5/5</b><span class="tiny">单公司事实题在两种模式下全对</span></div>
+  <div><b>10/10</b><span class="tiny">回答里每一句都标了出处编号</span></div>
+</div>
+
+<h2>二、10 道题的结果（逐题召回明细见 results/逐题记录.md）</h2>
+<table>
+<tr><th style="width:4%">题</th><th style="width:19%">类型</th><th style="width:14%">基本混合</th><th style="width:17%">抽词+分组</th><th>错在哪（两种模式的失败点）</th></tr>
+<tr><td>1</td><td>单公司·表格直取</td><td class="ok">对</td><td class="ok">对</td><td class="tiny">单位被样板行过滤误删，模型不敢补单位</td></tr>
+<tr><td>2</td><td>单公司·同比</td><td class="ok">对</td><td class="ok">对</td><td class="tiny">主动区分营业收入 / 营业总收入</td></tr>
+<tr><td>3</td><td>单公司·口径陷阱</td><td class="ok">对</td><td class="ok">对</td><td class="tiny">材料只解释同比、未解释与净利润的差 → 如实说明</td></tr>
+<tr><td>4</td><td>单公司·非财务</td><td class="part">半对</td><td class="ok">对</td><td class="tiny">基本混合误判“境外收入未披露”（附注里有）</td></tr>
+<tr><td>5</td><td>单公司·口语长问题</td><td class="ok">对</td><td class="ok">对</td><td class="tiny">铺垫埋了 2 家干扰公司仍命中：公司名是强锚</td></tr>
+<tr><td>6</td><td>单公司·多子问题</td><td class="part">②错</td><td class="ok">对</td><td class="tiny">三问被两家公司“平均”，研发段落一块没进前 8</td></tr>
+<tr><td>7</td><td>跨公司·单指标比较</td><td class="bad">错</td><td class="part">仅格力</td><td class="tiny">三家的销售费用表都没进前 8 → 答“材料未提供”</td></tr>
+<tr><td>8</td><td>跨公司·全景（风险）</td><td class="part">4/15 家</td><td class="part">5/15 家</td><td class="tiny">答案散在十几家之间，top-8 装不下（课件同款结论）</td></tr>
+<tr><td>9</td><td>跨公司·全景（政策）</td><td class="ok">4 家</td><td class="ok">5 家</td><td class="tiny">政策名词字面固定，是跨公司题里最稳的一类</td></tr>
+<tr><td>10</td><td>跨公司·比较+归因</td><td class="bad">结论错</td><td class="ok">对</td><td class="tiny">基本混合漏了格力→“海尔最慢”；抽词后自行算出格力 −8.14%</td></tr>
+</table>
+
+<h2>三、三类问题的分界（来自上面这张表的真实数据）</h2>
+<ul>
+<li><b>点状事实 → 建库就够，而且很稳。</b>“某家公司的某个科目是多少、在哪一页说的”，答案落在 1–3 块里：单公司题 <b>5/5 全对</b>，两种检索模式没有区别，每句都能点回原文页。<b>不需要微调</b>——知识每季度都变，权重里背下来的数字下个报告期就是错的。</li>
+<li><b>跨公司比较与全景 → 建库也能做，但要额外做检索侧工程。</b>一句话写三家公司时，向量把三家“平均”成一个问句；一家块多就把 8 个名额占满（第 7、10 题基本混合全错，第 10 题还给出错误结论）。把问题先抽成关键词、再按公司分组保底召回之后，<b>5/10 → 8/10</b>（第 6、10 题救回，第 4 题多找到附注里的分地区收入）。<b>决定成败的是切块、表头、分词、分组这些工程细节，不是换 embedding</b>：本次两个致命 bug 都在工程层（数字被分词器丢掉、正则里混进退格符）。</li>
+<li><b>只有“习惯”才值得微调。</b>10 道题的答案里数字全部来自检索，模型一次也没有编造；真正每次都要重复的是<b>作答的格式与口径习惯</b>——“先结论后依据、每句带出处、金额统一成亿元并注明合并/母公司口径”。这些不随财报更新、却每次都要模型照做，正是课件里 SFT 的正例。</li>
+</ul>
+
+<div class="box">
+<b>一句话结论：</b>同一批财报，<b>“谁在哪一页说了什么”的事实适合建库</b>——知识会更新、答案要溯源、一次检索就能答对（单公司题 5/5，跨公司题加检索侧工程补到 8/10）；<b>而“每次都用同一套格式和口径作答”的习惯才适合微调</b>——它不随财报更新，却是最该写进权重的东西。
+</div>
+
+<p class="tiny"><b>附·踩到并已修的四个坑：</b>①页眉页脚是“万能块”（每页重复的“公司名+附注+金额单位+页码”与任何问题都像），按“出现在该公司 15% 以上块里”判为样板行删掉，丢弃 828 块——副作用是“金额单位为千元”这类有用信息也被删，第 1 题因此丢单位；②分词器把数字丢了（“90,642,783”“5129627933.54”因含逗号/小数点被判为标点过滤），全库带小数点的金额都进不了 BM25，这是财报检索的致命伤；③修②时脚本把正则里的 <code>\b</code> 写成了 <code>\x08</code>，那行 <code>re.sub</code> 静默失效，白修一轮；④思考模式吃光 max_tokens，首跑 6 道题返回空回答（推理 token 也算在 max_tokens 里），上限提到 8192 后正常。<br>
+<b>代码与数据：</b><code>财报问答库/</code>（scripts/01–10 全流程脚本、web/index.html 页面、results/ 逐题记录+召回评测+原始问答日志）。财报 PDF 不入库，<code>01_download.py</code> 一条命令重下；密钥只在 .env（已 gitignore）。</p>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家电行业 2026 半年报问答库</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1c1f23; --ink2:#5b6470; --ink3:#8b95a1;
+    --line:#e3e6ea; --accent:#1f6feb; --accent-soft:#eaf1fe;
+    --ok:#137a4b; --warn:#a35a00;
+    --table:#7a4fd6; --text:#1f6feb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.7 "Segoe UI","Microsoft YaHei",system-ui,sans-serif}
+  header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 22px;
+         display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:9}
+  header h1{font-size:17px;margin:0;font-weight:650;letter-spacing:.3px}
+  header .meta{color:var(--ink3);font-size:12.5px}
+  header .meta b{color:var(--ink2);font-weight:600}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 22px 80px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+        box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  /* 提问区 */
+  .ask{padding:16px 18px}
+  .row{display:flex;gap:10px;align-items:flex-start}
+  textarea{flex:1;min-height:56px;max-height:200px;resize:vertical;padding:11px 13px;
+           border:1px solid var(--line);border-radius:9px;font:inherit;background:#fcfcfd;outline:none}
+  textarea:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px var(--accent-soft)}
+  button{cursor:pointer;border:1px solid var(--line);background:#fff;border-radius:9px;
+         padding:10px 16px;font:inherit;color:var(--ink2)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;
+                 padding:10px 20px}
+  button.primary:disabled{opacity:.55;cursor:default}
+  .opts{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:11px;
+        color:var(--ink2);font-size:13.5px}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg label{padding:5px 12px;cursor:pointer;border-right:1px solid var(--line);background:#fff}
+  .seg label:last-child{border-right:0}
+  .seg input{display:none}
+  .seg input:checked + span{color:var(--accent);font-weight:650}
+  .seg label:has(input:checked){background:var(--accent-soft)}
+  .hint{font-size:12.5px;color:var(--ink3)}
+  .examples{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 12px;
+        font-size:12.5px;color:var(--ink2);cursor:pointer}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  /* 回答区 */
+  #answerCard{margin-top:16px;display:none}
+  .secTitle{padding:12px 18px;border-bottom:1px solid var(--line);font-size:13px;
+            color:var(--ink2);display:flex;justify-content:space-between;align-items:center}
+  .secTitle b{color:var(--ink);font-size:14px}
+  .answer{padding:16px 18px;white-space:pre-wrap}
+  .answer .cite{display:inline-block;min-width:19px;text-align:center;background:var(--accent-soft);
+    color:var(--accent);border-radius:5px;font-size:12px;padding:0 4px;margin:0 2px;cursor:pointer;
+    font-weight:600;text-decoration:none;line-height:17px}
+  .answer .cite:hover{background:var(--accent);color:#fff}
+  /* 召回块 */
+  .hits{padding:6px 12px 14px}
+  .hit{border:1px solid var(--line);border-radius:10px;margin:10px 6px;overflow:hidden}
+  .hit.hl{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .hitHead{display:flex;gap:10px;align-items:center;padding:9px 13px;background:#fbfcfd;
+           cursor:pointer;flex-wrap:wrap}
+  .rank{width:22px;height:22px;border-radius:6px;background:var(--ink);color:#fff;font-size:12px;
+        display:flex;align-items:center;justify-content:center;font-weight:600;flex:none}
+  .co{font-weight:650}
+  .tags{color:var(--ink3);font-size:12.5px}
+  .kind{font-size:11.5px;border-radius:5px;padding:1px 7px;border:1px solid var(--line)}
+  .kind.table{color:var(--table);border-color:#e2d8f8;background:#f8f5ff}
+  .kind.text{color:var(--text);border-color:#d8e6fb;background:#f4f8ff}
+  .scores{margin-left:auto;color:var(--ink3);font-size:12px;font-variant-numeric:tabular-nums}
+  .scores b{color:var(--ink2);font-weight:600}
+  .hitBody{padding:0 13px 12px;display:none;color:#33383f;font-size:13.5px;white-space:pre-wrap;
+           max-height:340px;overflow:auto;font-family:"Cascadia Mono","Consolas",monospace}
+  .hit.open .hitBody{display:block}
+  /* 星空图 */
+  .mapCard{margin-top:16px}
+  #map{width:100%;height:520px;display:block}
+  .legend{display:flex;gap:12px;flex-wrap:wrap;padding:0 18px 14px;font-size:12.5px;color:var(--ink2)}
+  .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+  .status{padding:14px 18px;color:var(--ink3);font-size:13.5px}
+  .err{color:#b42318}
+  .foot{color:var(--ink3);font-size:12.5px;margin-top:18px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>家电行业 2026 半年报问答库</h1>
+  <div class="meta" id="stats">加载中……</div>
+</header>
+
+<div class="wrap">
+  <div class="card ask">
+    <div class="row">
+      <textarea id="q" placeholder="问点什么，比如：美的集团上半年货币资金是多少？格力、美的、海尔三家的销售费用谁最高？"></textarea>
+      <button class="primary" id="go">提问</button>
+    </div>
+    <div class="opts">
+      <span>检索模式</span>
+      <span class="seg" id="modes">
+        <label><input type="radio" name="mode" value="vector"><span>只用向量</span></label>
+        <label><input type="radio" name="mode" value="bm25"><span>只用 BM25</span></label>
+        <label><input type="radio" name="mode" value="hybrid" checked><span>向量+BM25</span></label>
+        <label><input type="radio" name="mode" value="rewrite"><span>改写+混合</span></label>
+      </span>
+      <label class="hint">召回块数 <input id="topk" type="number" value="8" min="3" max="20"
+        style="width:52px;padding:3px 6px;border:1px solid var(--line);border-radius:6px"></label>
+    </div>
+    <div class="examples" id="examples"></div>
+  </div>
+
+  <div class="card" id="answerCard">
+    <div class="secTitle"><b>回答</b><span id="answerMeta"></span></div>
+    <div class="answer" id="answer"></div>
+    <div class="secTitle"><b>召回明细</b><span class="hint">点条目展开原文；点回答里的 [编号] 可跳转</span></div>
+    <div class="hits" id="hits"></div>
+  </div>
+
+  <div class="card mapCard">
+    <div class="secTitle"><b>文本块星空图</b>
+      <span class="hint">每块一个点：一座小岛 = 一家公司。点任意一处可看该块原文</span></div>
+    <canvas id="map"></canvas>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <div class="foot">语料：15 家家电上市公司 2026 年半年度报告全文 · 数据源：巨潮资讯网 cninfo.com.cn</div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const EXAMPLES = [
+  "美的集团上半年的货币资金是多少？占总资产比例多少？",
+  "格力电器上半年营业收入和归母净利润分别是多少？同比变化？",
+  "美的、格力、海尔智家三家的销售费用谁最高？分别是多少？",
+  "石头科技上半年海外收入占比多少？",
+  "家电公司半年报里普遍提到的汇率波动风险有哪些？",
+];
+let MAPDATA = null, CUR = null;
+
+/* ---------- 元信息 ---------- */
+fetch("/api/meta").then(r => r.json()).then(m => {
+  $("#stats").innerHTML = `<b>${m.companies.length}</b> 家公司 · <b>${m.n_chunks.toLocaleString()}</b> 个文本块`
+    + `（正文 ${m.n_text.toLocaleString()} / 表格 ${m.n_table.toLocaleString()}）· 向量 ${m.model.split("/")[1]}`
+    + ` · 回答 ${m.answer_model}` + (m.has_key ? "" : " ⚠️ 未配置 DEEPSEEK_API_KEY");
+  const colors = ["#1f6feb","#7a4fd6","#137a4b","#a35a00","#b42318","#0e7490","#9333ea","#4d7c0f",
+                  "#be185d","#0369a1","#b45309","#15803d","#6d28d9","#9f1239","#0f766e"];
+  $("#legend").innerHTML = m.companies.map(([c], i) =>
+    `<span><i style="background:${colors[i % colors.length]}"></i>${c}</span>`).join("");
+});
+$("#examples").innerHTML = EXAMPLES.map(e => `<span class="chip">${e}</span>`).join("");
+$("#examples").onclick = e => { if (e.target.classList.contains("chip")) { $("#q").value = e.target.textContent; ask(); } };
+$("#go").onclick = ask;
+$("#q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); } });
+
+/* 演示/截图用：带 ?q=问题&auto=1 打开页面会自动提问（录屏时省得手打） */
+const _sp = new URLSearchParams(location.search);
+if (_sp.get("q")) {
+  $("#q").value = _sp.get("q");
+  if (_sp.get("mode")) document.querySelector(`input[name=mode][value=${_sp.get("mode")}]`).checked = true;
+  if (_sp.get("auto") === "1") setTimeout(ask, 800);
+}
+
+/* ---------- 提问 ---------- */
+async function ask() {
+  const question = $("#q").value.trim();
+  if (!question) return;
+  const mode = document.querySelector('input[name=mode]:checked').value;
+  const top_k = +$("#topk").value || 8;
+  $("#go").disabled = true; $("#go").textContent = "检索中…";
+  $("#answerCard").style.display = "block";
+  $("#answer").innerHTML = '<span class="status">正在检索并生成回答…（首次提问要加载向量模型，约 10–30 秒）</span>';
+  $("#answerMeta").textContent = "";
+  $("#hits").innerHTML = "";
+  try {
+    const t0 = Date.now();
+    const r = await fetch("/api/ask", {method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question, mode, top_k})});
+    const d = await r.json();
+    if (d.error) throw new Error(d.error);
+    CUR = d;
+    renderAnswer(d);
+    renderHits(d);
+  } catch (e) {
+    $("#answer").innerHTML = `<span class="err">出错：${e.message}</span>`;
+  } finally {
+    $("#go").disabled = false; $("#go").textContent = "提问";
+  }
+}
+
+function renderAnswer(d) {
+  const MODE = {vector:"只用向量", bm25:"只用 BM25", hybrid:"向量+BM25", rewrite:"改写+混合"};
+  $("#answerMeta").textContent = `${MODE[d.mode]} · 召回 ${d.hits.length} 块 · ${d.seconds}s`
+    + (d.usage && d.usage.total_tokens ? ` · ${d.usage.total_tokens} tokens` : "");
+  const html = d.answer.replace(/\[(\d{1,2})\]/g,
+    '<a class="cite" href="#hit$1" data-r="$1">[$1]</a>');
+  $("#answer").innerHTML = html;
+  $("#answer").querySelectorAll(".cite").forEach(a => a.onclick = ev => {
+    ev.preventDefault();
+    const el = $("#hit" + a.dataset.r);
+    if (el) { el.classList.add("open", "hl"); el.scrollIntoView({behavior: "smooth", block: "center"}); }
+  });
+}
+
+function renderHits(d) {
+  $("#hits").innerHTML = d.hits.map(h => `
+    <div class="hit" id="hit${h.rank}">
+      <div class="hitHead">
+        <span class="rank">${h.rank}</span>
+        <span class="co">${h.company}</span>
+        <span class="tags">${h.section} · 第 ${h.page} 页</span>
+        <span class="kind ${h.kind}">${h.kind === "table" ? "表格" : "正文"}</span>
+        <span class="scores">向量 <b>${h.sim.toFixed(3)}</b> · BM25 <b>${h.bm25.toFixed(1)}</b></span>
+      </div>
+      <div class="hitBody">${escapeHtml(h.text)}</div>
+    </div>`).join("");
+  $("#hits").querySelectorAll(".hitHead").forEach(h =>
+    h.onclick = () => h.parentElement.classList.toggle("open"));
+}
+
+const escapeHtml = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+/* ---------- 星空图 ---------- */
+fetch("/api/map").then(r => r.json()).then(m => {
+  MAPDATA = m;
+  if (!m.points || !m.points.length) { $("#map").style.display = "none"; return; }
+  drawMap();
+});
+function drawMap() {
+  const cv = $("#map"), dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const g = cv.getContext("2d"); g.scale(dpr, dpr);
+  const pts = MAPDATA.points, colors = MAPDATA.colors;
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const pad = 16, sx = (W - 2*pad) / (x1 - x0 || 1), sy = (H - 2*pad) / (y1 - y0 || 1);
+  g.clearRect(0, 0, W, H);
+  pts.forEach((p, i) => {
+    const X = pad + (p[0] - x0) * sx, Y = H - pad - (p[1] - y0) * sy;
+    g.beginPath(); g.arc(X, Y, p[3] === "table" ? 1.7 : 1.4, 0, 7);
+    g.fillStyle = colors[p[2]] + (p[3] === "table" ? "aa" : "cc"); g.fill();
+  });
+  cv.onclick = ev => {
+    const rect = cv.getBoundingClientRect();
+    const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
+    let best = null, bd = 1e9;
+    pts.forEach(p => {
+      const X = pad + (p[0] - x0) * sx, Y = H - pad - (p[1] - y0) * sy;
+      const d = (X-mx)**2 + (Y-my)**2; if (d < bd) { bd = d; best = p; }
+    });
+    if (best) showChunk(best[4]);
+  };
+}
+function showChunk(id) {
+  fetch("/api/chunk?id=" + encodeURIComponent(id)).then(r => r.json()).then(c => {
+    $("#answerCard").style.display = "block";
+    $("#answerMeta").textContent = "星空图选中的块";
+    $("#answer").innerHTML = `<b>${c.company}</b> · ${c.section} · 第 ${c.page} 页`
+      + `（${c.kind === "table" ? "表格" : "正文"}）\n\n` + escapeHtml(c.raw);
+    $("#hits").innerHTML = "";
+    $("#answerCard").scrollIntoView({behavior: "smooth"});
+  });
+}
+window.addEventListener("resize", () => MAPDATA && drawMap());
+</script>
+</body>
+</html>

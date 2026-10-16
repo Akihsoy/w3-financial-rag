@@ -1,0 +1,13 @@
+# 提取与切块
+pymupdf>=1.24            # PDF 取文字 + 表格按行列还原
+# 索引与检索
+numpy>=1.26
+jieba>=0.42              # BM25 中文分词
+rank-bm25>=0.2.2         # BM25Okapi
+# 向量（本地模型；有 N 卡请装 CUDA 版 torch，见 README 踩坑 1）
+torch>=2.4
+sentence-transformers>=3.0
+# 星空图降维
+scikit-learn>=1.4
+# 可选：自动截图
+# playwright>=1.40

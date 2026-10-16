@@ -1,0 +1,30 @@
+# ===== 密钥：绝不进仓库 =====
+.env
+
+# ===== 语料与中间产物：体积大，能重新生成，不进仓库 =====
+# （财报 PDF 用 scripts/01_download.py 一条命令重新拉，见 README）
+data/pdf/
+data/text/
+data/pages.jsonl
+data/chunks.jsonl
+data/emb.npy
+data/emb.part.npy
+data/emb_meta.json
+data/bm25.pkl
+data/map.json
+data/download_log.csv
+
+# ===== 结果文件里可能带运行环境信息，保留汇总、忽略原始日志 =====
+results/*.local.json
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ===== 编辑器/系统 =====
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

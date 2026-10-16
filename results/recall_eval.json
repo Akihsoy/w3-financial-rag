@@ -1,0 +1,6270 @@
+[
+ {
+  "id": 1,
+  "type": "单公司·表格直取",
+  "q": "美的集团2026年上半年货币资金余额是多少？占总资产的比例是多少？",
+  "gold_ids": [
+   "000333_p146_t00309",
+   "000333_p53_t00106",
+   "000333_p96_t00207"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": 8,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "美的集团"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "000333_p49_00096",
+     "000333_p17_00030",
+     "000333_p84_t00180",
+     "000333_p69_t00144",
+     "000333_p11_00018",
+     "000333_p178_t00403",
+     "000333_p96_t00207"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6867,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 49,
+      "kind": "text",
+      "sim": 0.6411,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.6325,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.6321,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6293,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 178,
+      "kind": "table",
+      "sim": 0.6287,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 96,
+      "kind": "table",
+      "sim": 0.6269,
+      "bm25": 0.0,
+      "is_gold": true
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "美的集团",
+     "小熊电器"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p86_t00184",
+     "000333_p85_t00182",
+     "000333_p150_00321",
+     "000333_p17_00030",
+     "002959_p18_t04413",
+     "000333_p105_00243",
+     "000333_p15_00026"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 63.37,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.55,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 33.86,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 150,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 26.89,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 25.89,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 18,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 25.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 105,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 24.73,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 24.38,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 4,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "美的集团"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p17_00030",
+     "000333_p85_t00182",
+     "000333_p53_t00106",
+     "000333_p12_00021",
+     "000333_p199_00465",
+     "000333_p26_00049",
+     "000333_p49_00096"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.6325,
+      "bm25": 63.37,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 25.89,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.6036,
+      "bm25": 33.86,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 53,
+      "kind": "table",
+      "sim": 0.6162,
+      "bm25": 23.59,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6215,
+      "bm25": 21.54,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 199,
+      "kind": "text",
+      "sim": 0.5971,
+      "bm25": 23.37,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6867,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 49,
+      "kind": "text",
+      "sim": 0.6411,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "美的集团"
+    ],
+    "ids": [
+     "000333_p53_t00106",
+     "000333_p17_00030",
+     "000333_p26_00049",
+     "000333_p178_t00403",
+     "000333_p49_00096",
+     "000333_p53_t00108",
+     "000333_p150_00321",
+     "000333_p84_t00180"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 53,
+      "kind": "table",
+      "sim": 0.6162,
+      "bm25": 23.59,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 18.8,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6867,
+      "bm25": 17.04,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 178,
+      "kind": "table",
+      "sim": 0.6287,
+      "bm25": 17.27,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 49,
+      "kind": "text",
+      "sim": 0.6411,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 53,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 23.39,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 150,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 22.94,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.6325,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 4,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "美的集团"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p17_00030",
+     "000333_p85_t00182",
+     "000333_p53_t00106",
+     "000333_p26_00049",
+     "000333_p12_00021",
+     "000333_p199_00465",
+     "000333_p49_00096"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.6325,
+      "bm25": 63.37,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 25.89,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.6036,
+      "bm25": 33.86,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 53,
+      "kind": "table",
+      "sim": 0.6162,
+      "bm25": 23.59,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6867,
+      "bm25": 20.13,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6215,
+      "bm25": 21.54,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 199,
+      "kind": "text",
+      "sim": 0.5971,
+      "bm25": 23.37,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 49,
+      "kind": "text",
+      "sim": 0.6411,
+      "bm25": 18.53,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "美的集团"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "000333_p53_t00106",
+     "000333_p17_00030",
+     "000333_p156_00339",
+     "000333_p12_00021",
+     "000333_p199_00465",
+     "000333_p178_t00403",
+     "000333_p96_t00207"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6867,
+      "bm25": 16.42,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 53,
+      "kind": "table",
+      "sim": 0.6162,
+      "bm25": 19.25,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 14.83,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 156,
+      "kind": "text",
+      "sim": 0.5977,
+      "bm25": 16.6,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6215,
+      "bm25": 15.14,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 199,
+      "kind": "text",
+      "sim": 0.5971,
+      "bm25": 15.9,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 178,
+      "kind": "table",
+      "sim": 0.6287,
+      "bm25": 13.99,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 96,
+      "kind": "table",
+      "sim": 0.6269,
+      "bm25": 13.15,
+      "is_gold": true
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 2,
+  "type": "单公司·同比",
+  "q": "格力电器2026年上半年营业收入和归属于上市公司股东的净利润分别是多少？同比变化多少？",
+  "gold_ids": [
+   "000651_p145_t01438",
+   "000651_p145_t01439",
+   "000651_p23_t01122",
+   "000651_p24_t01124",
+   "000651_p57_t01205",
+   "000651_p57_t01207",
+   "000651_p65_t01234",
+   "000651_p7_t01086",
+   "000651_p7_t01087"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": 3,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "格力电器"
+    ],
+    "ids": [
+     "000651_p59_t01213",
+     "000651_p59_t01214",
+     "000651_p57_t01205",
+     "000651_p57_t01207",
+     "000651_p57_t01206",
+     "000651_p59_t01216",
+     "000651_p59_t01215",
+     "000651_p57_t01208"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7355,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7282,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7223,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7172,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7141,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.703,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.6947,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.6896,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 6,
+    "companies": [
+     "美的集团",
+     "TCL智家",
+     "老板电器",
+     "格力电器",
+     "石头科技",
+     "新宝股份"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "002668_p7_03603",
+     "002508_p9_03255",
+     "000333_p7_00011",
+     "000651_p9_01090",
+     "688169_p59_06286",
+     "688169_p13_06189",
+     "002705_p14_03997"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 61.15,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "TCL智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 37.14,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "老板电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 35.07,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 33.62,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 33.06,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 32.4,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "石头科技",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 32.08,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 31.78,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "格力电器",
+     "美的集团",
+     "TCL智家"
+    ],
+    "ids": [
+     "000651_p9_01090",
+     "000651_p7_t01086",
+     "000651_p57_t01207",
+     "000651_p59_t01213",
+     "000333_p84_t00180",
+     "000651_p59_t01214",
+     "002668_p7_03603",
+     "000651_p57_t01205"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6752,
+      "bm25": 33.06,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "table",
+      "sim": 0.6652,
+      "bm25": 29.13,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7172,
+      "bm25": 25.55,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7355,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 61.15,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7282,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "TCL智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 37.14,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7223,
+      "bm25": 0.0,
+      "is_gold": true
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "格力电器",
+     "美的集团",
+     "石头科技"
+    ],
+    "ids": [
+     "000651_p9_01090",
+     "000651_p57_t01207",
+     "000651_p59_t01214",
+     "000651_p10_01093",
+     "000651_p10_01092",
+     "000651_p59_t01213",
+     "000333_p26_00049",
+     "688169_p59_06286"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6752,
+      "bm25": 20.08,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7172,
+      "bm25": 17.02,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7282,
+      "bm25": 16.54,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6212,
+      "bm25": 19.48,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.671,
+      "bm25": 16.62,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7355,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 32.87,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 23.79,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "格力电器"
+    ],
+    "ids": [
+     "000651_p9_01090",
+     "000651_p7_t01086",
+     "000651_p57_t01207",
+     "000651_p10_01093",
+     "000651_p10_01092",
+     "000651_p9_01091",
+     "000651_p59_t01213",
+     "000651_p59_t01214"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6752,
+      "bm25": 33.06,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "table",
+      "sim": 0.6652,
+      "bm25": 29.13,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7172,
+      "bm25": 25.55,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6212,
+      "bm25": 24.7,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.671,
+      "bm25": 22.19,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6336,
+      "bm25": 21.81,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7355,
+      "bm25": 16.81,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7282,
+      "bm25": 16.54,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "格力电器"
+    ],
+    "ids": [
+     "000651_p9_01090",
+     "000651_p7_t01086",
+     "000651_p57_t01207",
+     "000651_p10_01092",
+     "000651_p10_01093",
+     "000651_p59_t01214",
+     "000651_p59_t01213",
+     "000651_p59_t01215"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6752,
+      "bm25": 28.96,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "table",
+      "sim": 0.6652,
+      "bm25": 28.66,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.7172,
+      "bm25": 25.55,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.671,
+      "bm25": 19.36,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6212,
+      "bm25": 20.86,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7282,
+      "bm25": 16.54,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.7355,
+      "bm25": 16.2,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.6947,
+      "bm25": 17.45,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 3,
+  "type": "单公司·口径陷阱",
+  "q": "海尔智家2026年上半年经营活动产生的现金流量净额是多少？它与净利润相差多少？公司怎么解释这个差异？",
+  "gold_ids": [
+   "600690_p157_t05189",
+   "600690_p16_04822",
+   "600690_p33_t04856",
+   "600690_p6_t04801",
+   "600690_p74_t04955"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "海尔智家"
+    ],
+    "ids": [
+     "600690_p6_t04801",
+     "600690_p16_04822",
+     "600690_p16_04821",
+     "600690_p75_t04959",
+     "600690_p33_t04856",
+     "600690_p6_t04802",
+     "600690_p66_04917",
+     "600690_p15_04820"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.7253,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7128,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7022,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.6775,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "table",
+      "sim": 0.6549,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6514,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 66,
+      "kind": "text",
+      "sim": 0.6394,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6349,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "TCL智家",
+     "石头科技"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p85_t00182",
+     "000333_p86_t00184",
+     "600690_p75_t04960",
+     "002668_p48_t03720",
+     "600690_p75_t04959",
+     "002668_p48_t03721",
+     "688169_p13_06189"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 76.15,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 45.11,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 44.01,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 31.86,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "TCL智家",
+      "section": "第八节 财务报告",
+      "page": 48,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 29.8,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 29.76,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "TCL智家",
+      "section": "第八节 财务报告",
+      "page": 48,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 29.64,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 29.02,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 2,
+    "companies": [
+     "海尔智家",
+     "美的集团"
+    ],
+    "ids": [
+     "600690_p75_t04959",
+     "600690_p33_t04856",
+     "600690_p75_t04960",
+     "600690_p16_04822",
+     "600690_p74_t04955",
+     "600690_p75_t04958",
+     "600690_p6_t04801",
+     "000333_p84_t00180"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.6775,
+      "bm25": 29.76,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "table",
+      "sim": 0.6549,
+      "bm25": 28.28,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.5911,
+      "bm25": 31.86,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7128,
+      "bm25": 27.35,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 74,
+      "kind": "table",
+      "sim": 0.5789,
+      "bm25": 29.0,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.563,
+      "bm25": 26.67,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.7253,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 76.15,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "海尔智家"
+    ],
+    "ids": [
+     "600690_p75_t04959",
+     "600690_p33_t04856",
+     "600690_p75_t04960",
+     "600690_p6_t04801",
+     "600690_p16_04822",
+     "600690_p74_t04955",
+     "600690_p75_t04958",
+     "600690_p16_04821"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.6775,
+      "bm25": 29.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "table",
+      "sim": 0.6549,
+      "bm25": 27.4,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.5911,
+      "bm25": 30.95,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.7253,
+      "bm25": 25.53,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7128,
+      "bm25": 25.44,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 74,
+      "kind": "table",
+      "sim": 0.5789,
+      "bm25": 28.22,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.563,
+      "bm25": 25.53,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7022,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "海尔智家"
+    ],
+    "ids": [
+     "600690_p75_t04959",
+     "600690_p33_t04856",
+     "600690_p75_t04960",
+     "600690_p16_04822",
+     "600690_p74_t04955",
+     "600690_p6_t04801",
+     "600690_p75_t04958",
+     "600690_p33_04855"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.6775,
+      "bm25": 29.76,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "table",
+      "sim": 0.6549,
+      "bm25": 28.28,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.5911,
+      "bm25": 31.86,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7128,
+      "bm25": 27.35,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 74,
+      "kind": "table",
+      "sim": 0.5789,
+      "bm25": 29.0,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.7253,
+      "bm25": 25.53,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.563,
+      "bm25": 26.67,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "text",
+      "sim": 0.5594,
+      "bm25": 25.06,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "海尔智家"
+    ],
+    "ids": [
+     "600690_p75_t04959",
+     "600690_p33_t04856",
+     "600690_p75_t04960",
+     "600690_p6_t04801",
+     "600690_p16_04822",
+     "600690_p74_t04955",
+     "600690_p75_t04958",
+     "600690_p76_t04962"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.6775,
+      "bm25": 29.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 33,
+      "kind": "table",
+      "sim": 0.6549,
+      "bm25": 27.4,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.5911,
+      "bm25": 30.95,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.7253,
+      "bm25": 25.53,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.7128,
+      "bm25": 25.44,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 74,
+      "kind": "table",
+      "sim": 0.5789,
+      "bm25": 28.22,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 75,
+      "kind": "table",
+      "sim": 0.563,
+      "bm25": 25.53,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第八节 财务报告",
+      "page": 76,
+      "kind": "table",
+      "sim": 0.5412,
+      "bm25": 25.2,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 4,
+  "type": "单公司·非财务",
+  "q": "石头科技2026年上半年境外业务的规模有多大？境外资产占总资产比例是多少？",
+  "gold_ids": [
+   "688169_p62_06293"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 1,
+    "companies": [
+     "石头科技"
+    ],
+    "ids": [
+     "688169_p59_06286",
+     "688169_p22_06206",
+     "688169_p21_06205",
+     "688169_p12_t06188",
+     "688169_p69_t06307",
+     "688169_p22_06208",
+     "688169_p223_06673",
+     "688169_p13_06189"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.6699,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.6442,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 21,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 12,
+      "kind": "table",
+      "sim": 0.5832,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.5765,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.5763,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 223,
+      "kind": "text",
+      "sim": 0.575,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5692,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": 3,
+    "hit": true,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "新宝股份",
+     "石头科技",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "002705_p17_t04007",
+     "688169_p62_06293",
+     "000333_p85_t00182",
+     "600690_p35_04860",
+     "000333_p86_t00184",
+     "000333_p15_00026",
+     "000333_p37_00072"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 62.62,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 41.75,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 38.49,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 35.52,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 35,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 30.9,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 29.34,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 29.11,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 37,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 26.41,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "石头科技",
+     "美的集团",
+     "新宝股份"
+    ],
+    "ids": [
+     "688169_p62_06293",
+     "688169_p223_06673",
+     "688169_p100_t06365",
+     "688169_p59_06286",
+     "000333_p84_t00180",
+     "688169_p22_06206",
+     "002705_p17_t04007",
+     "688169_p21_06205"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.5557,
+      "bm25": 38.49,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 223,
+      "kind": "text",
+      "sim": 0.575,
+      "bm25": 22.23,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第五节 重要事项",
+      "page": 100,
+      "kind": "table",
+      "sim": 0.5338,
+      "bm25": 24.46,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.6699,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 62.62,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.6442,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 41.75,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 21,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "石头科技",
+     "新宝股份",
+     "海尔智家"
+    ],
+    "ids": [
+     "688169_p62_06293",
+     "688169_p100_t06365",
+     "688169_p102_t06370",
+     "688169_p59_06286",
+     "002705_p17_t04007",
+     "688169_p22_06206",
+     "688169_p21_06205",
+     "600690_p35_04860"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.5557,
+      "bm25": 30.67,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "石头科技",
+      "section": "第五节 重要事项",
+      "page": 100,
+      "kind": "table",
+      "sim": 0.5338,
+      "bm25": 18.08,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第六节 股份变动及股东情况",
+      "page": 102,
+      "kind": "table",
+      "sim": 0.5417,
+      "bm25": 17.15,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.6699,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.16,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.6442,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 21,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 35,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 23.18,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "石头科技"
+    ],
+    "ids": [
+     "688169_p62_06293",
+     "688169_p223_06673",
+     "688169_p100_t06365",
+     "688169_p21_06205",
+     "688169_p68_t06305",
+     "688169_p22_06206",
+     "688169_p102_t06370",
+     "688169_p60_t06289"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.5557,
+      "bm25": 38.49,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 223,
+      "kind": "text",
+      "sim": 0.575,
+      "bm25": 22.23,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第五节 重要事项",
+      "page": 100,
+      "kind": "table",
+      "sim": 0.5338,
+      "bm25": 24.46,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 21,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 20.01,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 68,
+      "kind": "table",
+      "sim": 0.5428,
+      "bm25": 19.68,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.6442,
+      "bm25": 17.92,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "石头科技",
+      "section": "第六节 股份变动及股东情况",
+      "page": 102,
+      "kind": "table",
+      "sim": 0.5417,
+      "bm25": 19.6,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 60,
+      "kind": "table",
+      "sim": 0.4801,
+      "bm25": 23.13,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "石头科技"
+    ],
+    "ids": [
+     "688169_p62_06293",
+     "688169_p223_06673",
+     "688169_p102_t06370",
+     "688169_p69_t06307",
+     "688169_p22_06206",
+     "688169_p68_t06305",
+     "688169_p187_t06584",
+     "688169_p100_t06365"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.5557,
+      "bm25": 23.33,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 223,
+      "kind": "text",
+      "sim": 0.575,
+      "bm25": 16.18,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "石头科技",
+      "section": "第六节 股份变动及股东情况",
+      "page": 102,
+      "kind": "table",
+      "sim": 0.5417,
+      "bm25": 17.15,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.5765,
+      "bm25": 14.74,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "text",
+      "sim": 0.6442,
+      "bm25": 13.77,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 68,
+      "kind": "table",
+      "sim": 0.5428,
+      "bm25": 14.58,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 187,
+      "kind": "table",
+      "sim": 0.486,
+      "bm25": 16.45,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第五节 重要事项",
+      "page": 100,
+      "kind": "table",
+      "sim": 0.5338,
+      "bm25": 13.46,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 5,
+  "type": "单公司·口语长问题",
+  "q": "我最近在挑小家电的股票，先看了九阳和苏泊尔，感觉竞争挺激烈，朋友又推荐了新宝股份，说它是做代工出口的、海外客户多，我自己比较在意利润端的表现，另外还担心关税的事——那么新宝股份2026年上半年归母净利润是多少，同比是涨了还是跌了？",
+  "gold_ids": [
+   "002705_p108_t04258",
+   "002705_p49_t04089",
+   "002705_p54_t04112",
+   "002705_p7_t03988"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": 5,
+    "hit": true,
+    "n_companies": 2,
+    "companies": [
+     "新宝股份",
+     "九阳股份"
+    ],
+    "ids": [
+     "002705_p16_t04004",
+     "002705_p14_03997",
+     "002705_p15_03999",
+     "002705_p14_03998",
+     "002705_p49_t04089",
+     "002705_p16_t04003",
+     "002242_p38_t02941",
+     "002705_p50_t04095"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "table",
+      "sim": 0.6694,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6633,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6571,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6467,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "新宝股份",
+      "section": "第八节 财务报告",
+      "page": 49,
+      "kind": "table",
+      "sim": 0.6343,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "table",
+      "sim": 0.6259,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "九阳股份",
+      "section": "第八节 财务报告",
+      "page": 38,
+      "kind": "table",
+      "sim": 0.6071,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "新宝股份",
+      "section": "第八节 财务报告",
+      "page": 50,
+      "kind": "table",
+      "sim": 0.6037,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 5,
+    "companies": [
+     "苏泊尔",
+     "新宝股份",
+     "美的集团",
+     "石头科技",
+     "TCL智家"
+    ],
+    "ids": [
+     "002032_p11_02039",
+     "002705_p14_03997",
+     "002032_p9_02033",
+     "000333_p84_t00180",
+     "002705_p26_04024",
+     "688169_p28_06221",
+     "002668_p14_03619",
+     "002705_p15_03999"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 73.53,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 73.21,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 69.25,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 68.93,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "新宝股份",
+      "section": "第八节 财务报告",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 66.62,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 28,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 65.53,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "TCL智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 65.28,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 64.38,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "新宝股份",
+     "苏泊尔"
+    ],
+    "ids": [
+     "002705_p14_03997",
+     "002705_p15_03999",
+     "002705_p26_04024",
+     "002705_p9_03992",
+     "002705_p16_t04004",
+     "002032_p11_02039",
+     "002032_p9_02033",
+     "002705_p14_03998"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6633,
+      "bm25": 73.21,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6571,
+      "bm25": 64.38,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "新宝股份",
+      "section": "第八节 财务报告",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.5899,
+      "bm25": 66.62,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.572,
+      "bm25": 61.14,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "table",
+      "sim": 0.6694,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 73.53,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 69.25,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6467,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 5,
+    "companies": [
+     "新宝股份",
+     "九阳股份",
+     "美的集团",
+     "长虹美菱",
+     "石头科技"
+    ],
+    "ids": [
+     "002705_p15_03999",
+     "002705_p14_03997",
+     "002705_p14_03998",
+     "002242_p9_02860",
+     "002705_p16_t04004",
+     "000333_p26_00049",
+     "000521_p12_00498",
+     "688169_p59_06286"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6571,
+      "bm25": 18.35,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6633,
+      "bm25": 16.91,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6467,
+      "bm25": 14.64,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "九阳股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5832,
+      "bm25": 15.2,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "table",
+      "sim": 0.6694,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 24.09,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "长虹美菱",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 18.54,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第三节 管理层讨论与分析",
+      "page": 59,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 17.85,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 3,
+    "companies": [
+     "新宝股份",
+     "苏泊尔",
+     "九阳股份"
+    ],
+    "ids": [
+     "002705_p14_03997",
+     "002705_p15_03999",
+     "002705_p26_04024",
+     "002032_p11_02039",
+     "002032_p9_02033",
+     "002032_p17_02057",
+     "002242_p9_02861",
+     "002242_p9_02860"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6633,
+      "bm25": 73.21,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6571,
+      "bm25": 64.38,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "新宝股份",
+      "section": "第八节 财务报告",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.5899,
+      "bm25": 66.62,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.5329,
+      "bm25": 73.53,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "苏泊尔",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5176,
+      "bm25": 69.25,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "苏泊尔",
+      "section": "第八节",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.5197,
+      "bm25": 56.57,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "九阳股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.545,
+      "bm25": 51.16,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "九阳股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5832,
+      "bm25": 47.05,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 3,
+    "companies": [
+     "新宝股份",
+     "九阳股份",
+     "苏泊尔"
+    ],
+    "ids": [
+     "002705_p15_03999",
+     "002705_p14_03997",
+     "002705_p14_03998",
+     "002242_p9_02860",
+     "002242_p9_02861",
+     "002242_p38_t02941",
+     "002032_p113_t02369",
+     "002032_p113_t02368"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6571,
+      "bm25": 18.35,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6633,
+      "bm25": 16.91,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "新宝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.6467,
+      "bm25": 14.64,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "九阳股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5832,
+      "bm25": 15.2,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "九阳股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.545,
+      "bm25": 16.75,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "九阳股份",
+      "section": "第八节 财务报告",
+      "page": 38,
+      "kind": "table",
+      "sim": 0.6071,
+      "bm25": 9.56,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "苏泊尔",
+      "section": "第八节 财务报告",
+      "page": 113,
+      "kind": "table",
+      "sim": 0.5691,
+      "bm25": 8.7,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "苏泊尔",
+      "section": "第八节 财务报告",
+      "page": 113,
+      "kind": "table",
+      "sim": 0.5558,
+      "bm25": 8.27,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 6,
+  "type": "单公司·多子问题",
+  "q": "科沃斯2026年上半年：①营业收入和归母净利润各是多少？②研发投入是多少、同比变化如何？③海外收入占比或者境外资产规模是多少？",
+  "gold_ids": [
+   "603486_p124_t05600",
+   "603486_p125_t05602",
+   "603486_p12_05329",
+   "603486_p12_05330",
+   "603486_p144_t05642",
+   "603486_p14_05334",
+   "603486_p154_t05667",
+   "603486_p155_t05669",
+   "603486_p156_t05671",
+   "603486_p166_t05692",
+   "603486_p218_t05824",
+   "603486_p68_t05459",
+   "603486_p6_t05316"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "科沃斯"
+    ],
+    "ids": [
+     "603486_p6_t05316",
+     "603486_p12_05330",
+     "603486_p11_05327",
+     "603486_p6_t05317",
+     "603486_p71_t05470",
+     "603486_p62_05432",
+     "603486_p16_05339",
+     "603486_p8_t05322"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6899,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6514,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6443,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6392,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "科沃斯",
+      "section": "第八节 财务报告",
+      "page": 71,
+      "kind": "table",
+      "sim": 0.6106,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "科沃斯",
+      "section": "第七节 债券相关情况",
+      "page": 62,
+      "kind": "text",
+      "sim": 0.6052,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.6035,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 8,
+      "kind": "table",
+      "sim": 0.601,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "长虹美菱",
+     "海尔智家",
+     "格力电器"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p85_t00182",
+     "000333_p26_00049",
+     "000333_p86_t00184",
+     "000521_p14_t00503",
+     "600690_p35_t04861",
+     "000651_p10_01093",
+     "000521_p12_00498"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 103.13,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 55.18,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 48.7,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 44.01,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "长虹美菱",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 39.47,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 35,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 38.76,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 37.94,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "长虹美菱",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 37.86,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 2,
+    "companies": [
+     "科沃斯",
+     "美的集团"
+    ],
+    "ids": [
+     "603486_p12_05330",
+     "603486_p6_t05316",
+     "000333_p84_t00180",
+     "000333_p85_t00182",
+     "603486_p11_05327",
+     "000333_p26_00049",
+     "603486_p6_t05317",
+     "000333_p86_t00184"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6514,
+      "bm25": 35.04,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6899,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 103.13,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 55.18,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6443,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 48.7,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6392,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 44.01,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 5,
+    "companies": [
+     "科沃斯",
+     "美的集团",
+     "海尔智家",
+     "格力电器",
+     "华帝股份"
+    ],
+    "ids": [
+     "603486_p12_05330",
+     "603486_p11_05327",
+     "603486_p6_t05316",
+     "000333_p26_00049",
+     "600690_p35_t04861",
+     "000651_p10_01093",
+     "603486_p6_t05317",
+     "002035_p22_t02476"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6514,
+      "bm25": 31.19,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6443,
+      "bm25": 27.94,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6899,
+      "bm25": 0.0,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 41.63,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 35,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 34.86,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 34.25,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6392,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "华帝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 22,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 32.07,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "科沃斯"
+    ],
+    "ids": [
+     "603486_p12_05330",
+     "603486_p11_05327",
+     "603486_p6_t05316",
+     "603486_p25_t05358",
+     "603486_p12_05329",
+     "603486_p8_t05322",
+     "603486_p16_05339",
+     "603486_p69_t05463"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6514,
+      "bm25": 35.04,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6443,
+      "bm25": 31.21,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6899,
+      "bm25": 27.4,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "科沃斯",
+      "section": "第八节 财务报告",
+      "page": 25,
+      "kind": "table",
+      "sim": 0.5986,
+      "bm25": 28.41,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.5525,
+      "bm25": 30.29,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 8,
+      "kind": "table",
+      "sim": 0.601,
+      "bm25": 25.24,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.6035,
+      "bm25": 23.3,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "科沃斯",
+      "section": "第八节 财务报告",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.5619,
+      "bm25": 23.92,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 1,
+    "hit": true,
+    "n_companies": 1,
+    "companies": [
+     "科沃斯"
+    ],
+    "ids": [
+     "603486_p12_05330",
+     "603486_p11_05327",
+     "603486_p6_t05316",
+     "603486_p25_t05358",
+     "603486_p8_t05322",
+     "603486_p12_05329",
+     "603486_p16_05339",
+     "603486_p69_t05463"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6514,
+      "bm25": 31.19,
+      "is_gold": true
+     },
+     {
+      "rank": 2,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 11,
+      "kind": "text",
+      "sim": 0.6443,
+      "bm25": 27.94,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 6,
+      "kind": "table",
+      "sim": 0.6899,
+      "bm25": 23.24,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "科沃斯",
+      "section": "第八节 财务报告",
+      "page": 25,
+      "kind": "table",
+      "sim": 0.5986,
+      "bm25": 24.99,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 8,
+      "kind": "table",
+      "sim": 0.601,
+      "bm25": 23.91,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.5525,
+      "bm25": 25.72,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.6035,
+      "bm25": 18.62,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "科沃斯",
+      "section": "第八节 财务报告",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.5619,
+      "bm25": 19.62,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 7,
+  "type": "跨公司·单指标比较",
+  "q": "美的集团、格力电器、海尔智家三家公司2026年上半年的销售费用分别是多少？哪一家最高？",
+  "gold_ids": [
+   "000333_p172_00382",
+   "000333_p172_t00384",
+   "000333_p50_t00098",
+   "000333_p98_t00216",
+   "000651_p147_t01445",
+   "000651_p23_t01122",
+   "000651_p57_t01205",
+   "600690_p152_t05173",
+   "600690_p33_t04856",
+   "600690_p70_t04939"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "格力电器",
+     "海信家电"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p76_t00161",
+     "600690_p16_04821",
+     "000333_p17_00030",
+     "600690_p16_04822",
+     "000651_p147_01444",
+     "000921_p132_01890",
+     "000333_p26_00049"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6735,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 76,
+      "kind": "table",
+      "sim": 0.6452,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.635,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.632,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 147,
+      "kind": "text",
+      "sim": 0.63,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海信家电",
+      "section": "第八节 财务报告",
+      "page": 132,
+      "kind": "text",
+      "sim": 0.6291,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6287,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "美的集团",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p85_t00182",
+     "000333_p86_t00184",
+     "000333_p17_00030",
+     "000333_p15_00026",
+     "000333_p12_00021",
+     "600690_p48_t04883",
+     "000333_p26_00048"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 60.77,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 43.93,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.55,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 32.18,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 31.92,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 31.82,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第五节 重要事项",
+      "page": 48,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 30.57,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 29.51,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "格力电器"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p17_00030",
+     "000333_p13_00022",
+     "000333_p26_00049",
+     "000333_p14_00024",
+     "000333_p13_00023",
+     "600690_p10_04810",
+     "000651_p10_01093"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6735,
+      "bm25": 31.82,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 32.18,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.6257,
+      "bm25": 28.03,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6287,
+      "bm25": 26.65,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 14,
+      "kind": "text",
+      "sim": 0.565,
+      "bm25": 27.26,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5906,
+      "bm25": 25.65,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5576,
+      "bm25": 25.23,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5595,
+      "bm25": 24.98,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 6,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "格力电器",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p26_00049",
+     "000333_p17_00030",
+     "000651_p147_01444",
+     "600690_p16_04822",
+     "000333_p98_t00216",
+     "000333_p5_t00007",
+     "000333_p156_00339"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6735,
+      "bm25": 15.14,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6287,
+      "bm25": 16.42,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 14.83,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 147,
+      "kind": "text",
+      "sim": 0.63,
+      "bm25": 14.62,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.632,
+      "bm25": 12.66,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 98,
+      "kind": "table",
+      "sim": 0.5787,
+      "bm25": 14.18,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 5,
+      "kind": "table",
+      "sim": 0.5606,
+      "bm25": 12.81,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 156,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 16.6,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "格力电器",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p17_00030",
+     "000333_p13_00022",
+     "000651_p147_01444",
+     "600690_p10_04810",
+     "000651_p10_01093",
+     "600690_p9_04807",
+     "600690_p16_04821"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6735,
+      "bm25": 31.82,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 32.18,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.6257,
+      "bm25": 28.03,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 147,
+      "kind": "text",
+      "sim": 0.63,
+      "bm25": 22.84,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5576,
+      "bm25": 25.23,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5595,
+      "bm25": 24.98,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5675,
+      "bm25": 24.35,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.635,
+      "bm25": 21.6,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 6,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "格力电器",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p26_00049",
+     "000333_p17_00030",
+     "000651_p147_01444",
+     "600690_p16_04822",
+     "000651_p57_t01205",
+     "000651_p59_t01213",
+     "600690_p16_04821"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6735,
+      "bm25": 15.14,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6287,
+      "bm25": 16.42,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6338,
+      "bm25": 14.83,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 147,
+      "kind": "text",
+      "sim": 0.63,
+      "bm25": 14.62,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.632,
+      "bm25": 12.66,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.5842,
+      "bm25": 12.65,
+      "is_gold": true
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.5935,
+      "bm25": 11.57,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.635,
+      "bm25": 10.53,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 8,
+  "type": "跨公司·全景",
+  "q": "这15家家电公司在2026年半年报里普遍提到了哪些风险或挑战？请归类说明。",
+  "gold_ids": [],
+  "modes": {
+   "vector": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "海尔智家",
+     "海信家电",
+     "美的集团",
+     "华帝股份"
+    ],
+    "ids": [
+     "600690_p10_04809",
+     "000921_p10_01577",
+     "600690_p9_04807",
+     "600690_p12_04814",
+     "600690_p10_04810",
+     "000333_p12_00021",
+     "000333_p13_00023",
+     "002035_p26_02489"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6227,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6224,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6144,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.608,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.607,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6044,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5777,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "华帝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.5679,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 6,
+    "companies": [
+     "美的集团",
+     "长虹美菱",
+     "海信家电",
+     "九阳股份",
+     "新宝股份",
+     "华帝股份"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p86_t00184",
+     "000333_p85_t00182",
+     "000521_p2_00479",
+     "000921_p2_01561",
+     "002242_p2_02847",
+     "002705_p2_03977",
+     "002035_p10_02450"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.88,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 29.34,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 24.65,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "长虹美菱",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 21.7,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海信家电",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 20.84,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "九阳股份",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 20.32,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "新宝股份",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 18.41,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "华帝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 18.02,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "华帝股份",
+     "海尔智家",
+     "海信家电",
+     "美的集团"
+    ],
+    "ids": [
+     "002035_p10_02450",
+     "600690_p12_04814",
+     "000921_p2_01561",
+     "000921_p31_01624",
+     "000333_p12_00021",
+     "600690_p10_04809",
+     "000333_p84_t00180",
+     "000921_p10_01577"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "华帝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5674,
+      "bm25": 18.02,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.608,
+      "bm25": 15.77,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "海信家电",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.553,
+      "bm25": 20.84,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析中",
+      "page": 31,
+      "kind": "text",
+      "sim": 0.565,
+      "bm25": 17.11,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6044,
+      "bm25": 14.78,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6227,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.88,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6224,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 5,
+    "companies": [
+     "海尔智家",
+     "海信家电",
+     "美的集团",
+     "小熊电器",
+     "长虹美菱"
+    ],
+    "ids": [
+     "600690_p12_04814",
+     "000921_p10_01577",
+     "000333_p12_00021",
+     "000921_p2_01561",
+     "002959_p23_04427",
+     "600690_p10_04809",
+     "000521_p69_t00611",
+     "600690_p9_04807"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.608,
+      "bm25": 13.53,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6224,
+      "bm25": 12.6,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6044,
+      "bm25": 12.43,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海信家电",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.553,
+      "bm25": 12.54,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.5585,
+      "bm25": 10.47,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6227,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "长虹美菱",
+      "section": "第五节 重要事项",
+      "page": 69,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 15.4,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6144,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 6,
+    "companies": [
+     "华帝股份",
+     "海尔智家",
+     "海信家电",
+     "美的集团",
+     "小熊电器",
+     "长虹美菱"
+    ],
+    "ids": [
+     "002035_p10_02450",
+     "600690_p12_04814",
+     "000921_p2_01561",
+     "000921_p31_01624",
+     "000333_p12_00021",
+     "000921_p10_01577",
+     "002959_p23_04427",
+     "000521_p2_00479"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "华帝股份",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5674,
+      "bm25": 18.02,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.608,
+      "bm25": 15.77,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "海信家电",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.553,
+      "bm25": 20.84,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析中",
+      "page": 31,
+      "kind": "text",
+      "sim": 0.565,
+      "bm25": 17.11,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6044,
+      "bm25": 14.78,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6224,
+      "bm25": 14.18,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.5585,
+      "bm25": 14.26,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "长虹美菱",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.4979,
+      "bm25": 21.7,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "海信家电",
+     "海尔智家",
+     "小熊电器",
+     "格力电器"
+    ],
+    "ids": [
+     "000921_p10_01577",
+     "000921_p2_01561",
+     "600690_p12_04814",
+     "002959_p23_04427",
+     "000921_p30_01621",
+     "600690_p10_04810",
+     "000651_p2_01078",
+     "600690_p16_04821"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.6224,
+      "bm25": 11.63,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海信家电",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.553,
+      "bm25": 12.54,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.608,
+      "bm25": 8.94,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.5585,
+      "bm25": 9.03,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海信家电",
+      "section": "第三节 管理层讨论与分析中",
+      "page": 30,
+      "kind": "text",
+      "sim": 0.5152,
+      "bm25": 10.33,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.607,
+      "bm25": 6.94,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第一节 重要提示、目录和释义",
+      "page": 2,
+      "kind": "text",
+      "sim": 0.5136,
+      "bm25": 9.53,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.5115,
+      "bm25": 9.57,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 9,
+  "type": "跨公司·全景（政策）",
+  "q": "哪些公司在2026年半年报里提到了以旧换新或国补政策？它们对这一政策的影响是怎么说的？",
+  "gold_ids": [
+   "000333_p12_00021",
+   "000333_p15_00027",
+   "000333_p16_00028",
+   "000333_p26_00049",
+   "002959_p23_04427"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 5,
+    "companies": [
+     "格力电器",
+     "美的集团",
+     "海尔智家",
+     "飞科电器",
+     "老板电器"
+    ],
+    "ids": [
+     "000651_p13_01099",
+     "000333_p13_00023",
+     "000651_p104_01319",
+     "600690_p9_04808",
+     "603868_p34_t05921",
+     "002508_p42_t03342",
+     "000651_p57_t01208",
+     "000333_p137_00292"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5261,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.4545,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 104,
+      "kind": "text",
+      "sim": 0.4491,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.4419,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "飞科电器",
+      "section": "第八节 财务报告",
+      "page": 34,
+      "kind": "table",
+      "sim": 0.4403,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "老板电器",
+      "section": "第八节 财务报告",
+      "page": 42,
+      "kind": "table",
+      "sim": 0.4317,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.4317,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.4315,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": 8,
+    "hit": true,
+    "n_companies": 5,
+    "companies": [
+     "美的集团",
+     "石头科技",
+     "飞科电器",
+     "九阳股份",
+     "小熊电器"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p86_t00184",
+     "000333_p85_t00182",
+     "688169_p146_06487",
+     "603868_p111_06116",
+     "000333_p137_00292",
+     "002242_p76_t03046",
+     "002959_p23_04427"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 62.26,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 44.01,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 41.68,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 146,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 29.61,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "飞科电器",
+      "section": "第八节 财务报告",
+      "page": 111,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 28.1,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 27.85,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "九阳股份",
+      "section": "第八节 财务报告",
+      "page": 76,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 27.79,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 27.6,
+      "is_gold": true
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": 3,
+    "hit": true,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "格力电器",
+     "小熊电器",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p137_00292",
+     "000651_p104_01319",
+     "002959_p23_04427",
+     "000333_p26_00049",
+     "600690_p9_04807",
+     "000651_p13_01099",
+     "000333_p84_t00180",
+     "000333_p13_00023"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.4315,
+      "bm25": 27.85,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 104,
+      "kind": "text",
+      "sim": 0.4491,
+      "bm25": 26.5,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.4181,
+      "bm25": 27.6,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.4302,
+      "bm25": 25.05,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.4188,
+      "bm25": 24.94,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5261,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 62.26,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.4545,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 5,
+    "companies": [
+     "格力电器",
+     "美的集团",
+     "小熊电器",
+     "海尔智家",
+     "科沃斯"
+    ],
+    "ids": [
+     "000651_p13_01099",
+     "000333_p26_00049",
+     "000651_p104_01319",
+     "000333_p137_00292",
+     "002959_p23_04427",
+     "600690_p9_04807",
+     "000333_p13_00023",
+     "603486_p54_05413"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5261,
+      "bm25": 13.03,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.4302,
+      "bm25": 14.54,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 104,
+      "kind": "text",
+      "sim": 0.4491,
+      "bm25": 11.04,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.4315,
+      "bm25": 12.51,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.4181,
+      "bm25": 15.97,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.4188,
+      "bm25": 11.31,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.4545,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "科沃斯",
+      "section": "第六节 股份变动及股东情况",
+      "page": 54,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 14.82,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": 3,
+    "hit": true,
+    "n_companies": 5,
+    "companies": [
+     "美的集团",
+     "格力电器",
+     "小熊电器",
+     "九阳股份",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p137_00292",
+     "000651_p104_01319",
+     "002959_p23_04427",
+     "000333_p26_00049",
+     "002242_p76_t03046",
+     "600690_p9_04807",
+     "000333_p85_t00182",
+     "600690_p12_04813"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.4315,
+      "bm25": 27.85,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 104,
+      "kind": "text",
+      "sim": 0.4491,
+      "bm25": 26.5,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.4181,
+      "bm25": 27.6,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.4302,
+      "bm25": 25.05,
+      "is_gold": true
+     },
+     {
+      "rank": 5,
+      "company": "九阳股份",
+      "section": "第八节 财务报告",
+      "page": 76,
+      "kind": "table",
+      "sim": 0.4037,
+      "bm25": 27.79,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.4188,
+      "bm25": 24.94,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.3935,
+      "bm25": 41.68,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.4274,
+      "bm25": 23.39,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 2,
+    "hit": true,
+    "n_companies": 5,
+    "companies": [
+     "格力电器",
+     "美的集团",
+     "小熊电器",
+     "海尔智家",
+     "科沃斯"
+    ],
+    "ids": [
+     "000651_p13_01099",
+     "000333_p26_00049",
+     "002959_p23_04427",
+     "000651_p104_01319",
+     "000333_p137_00292",
+     "600690_p9_04807",
+     "603486_p7_05318",
+     "600690_p12_04813"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.5261,
+      "bm25": 12.15,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.4302,
+      "bm25": 11.26,
+      "is_gold": true
+     },
+     {
+      "rank": 3,
+      "company": "小熊电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 23,
+      "kind": "text",
+      "sim": 0.4181,
+      "bm25": 13.42,
+      "is_gold": true
+     },
+     {
+      "rank": 4,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 104,
+      "kind": "text",
+      "sim": 0.4491,
+      "bm25": 7.81,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第八节 财务报告",
+      "page": 137,
+      "kind": "text",
+      "sim": 0.4315,
+      "bm25": 8.25,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.4188,
+      "bm25": 8.88,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "科沃斯",
+      "section": "第二节 公司简介和主要财务指标",
+      "page": 7,
+      "kind": "text",
+      "sim": 0.427,
+      "bm25": 8.03,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.4274,
+      "bm25": 7.97,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 10,
+  "type": "跨公司·比较+归因",
+  "q": "美的集团、格力电器、海尔智家三家公司2026年上半年营业收入增速谁最快、谁最慢？各家公司自己是怎么解释业绩变化的？",
+  "gold_ids": [
+   "000333_p171_t00380",
+   "000333_p50_t00098",
+   "000333_p51_t00101",
+   "000333_p7_t00012",
+   "000333_p98_t00216",
+   "000651_p145_t01439",
+   "000651_p23_t01122",
+   "000651_p24_t01124",
+   "000651_p57_t01205",
+   "000651_p7_t01086",
+   "000651_p7_t01087",
+   "600690_p151_t05171",
+   "600690_p172_t05239",
+   "600690_p172_t05240",
+   "600690_p173_t05242",
+   "600690_p33_t04856",
+   "600690_p6_t04801",
+   "600690_p70_t04937"
+  ],
+  "modes": {
+   "vector": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "美的集团",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p12_00021",
+     "000333_p26_00049",
+     "000333_p13_00022",
+     "600690_p16_04821",
+     "000333_p17_00030",
+     "600690_p16_04822",
+     "600690_p9_04807",
+     "000333_p76_t00161"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6899,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6599,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.6476,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.6459,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6226,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.6189,
+      "bm25": 0.0,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 76,
+      "kind": "table",
+      "sim": 0.6144,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "bm25": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 4,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "TCL智家",
+     "石头科技"
+    ],
+    "ids": [
+     "000333_p84_t00180",
+     "000333_p85_t00182",
+     "000333_p15_00026",
+     "000333_p26_00049",
+     "600690_p53_04892",
+     "000333_p86_t00184",
+     "002668_p10_03610",
+     "688169_p223_06673"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 70.85,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 49.49,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 40.93,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 38.93,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第八节 《财务报告》之",
+      "page": 53,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 38.87,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 86,
+      "kind": "table",
+      "sim": 0.0,
+      "bm25": 36.55,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "TCL智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 35.27,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "石头科技",
+      "section": "第八节 财务报告",
+      "page": 223,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 35.11,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "美的集团",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "000333_p84_t00180",
+     "000333_p12_00021",
+     "000333_p17_00030",
+     "000333_p85_t00182",
+     "600690_p15_04820",
+     "000333_p16_00029",
+     "000333_p13_00022"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6599,
+      "bm25": 38.93,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.5831,
+      "bm25": 70.85,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6899,
+      "bm25": 32.47,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6226,
+      "bm25": 32.76,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 85,
+      "kind": "table",
+      "sim": 0.564,
+      "bm25": 49.49,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6048,
+      "bm25": 31.29,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.5745,
+      "bm25": 31.93,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 13,
+      "kind": "text",
+      "sim": 0.6476,
+      "bm25": 0.0,
+      "is_gold": false
+     }
+    ]
+   },
+   "rewrite": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 2,
+    "companies": [
+     "美的集团",
+     "海尔智家"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "000333_p12_00021",
+     "000333_p84_t00180",
+     "000333_p17_00030",
+     "600690_p16_04822",
+     "600690_p15_04820",
+     "000333_p16_00029",
+     "600690_p53_04892"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6599,
+      "bm25": 31.22,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6899,
+      "bm25": 22.83,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.5831,
+      "bm25": 24.05,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6226,
+      "bm25": 22.47,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 22.05,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6048,
+      "bm25": 22.11,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.5745,
+      "bm25": 22.31,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "海尔智家",
+      "section": "第八节 《财务报告》之",
+      "page": 53,
+      "kind": "text",
+      "sim": 0.0,
+      "bm25": 28.91,
+      "is_gold": false
+     }
+    ]
+   },
+   "hybrid+分组": {
+    "first_gold_rank": null,
+    "hit": false,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "格力电器"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "000333_p84_t00180",
+     "000333_p12_00021",
+     "600690_p15_04820",
+     "600690_p16_04822",
+     "000651_p9_01090",
+     "600690_p16_04821",
+     "000651_p10_01092"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6599,
+      "bm25": 38.93,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "美的集团",
+      "section": "第五节 重要事项",
+      "page": 84,
+      "kind": "table",
+      "sim": 0.5831,
+      "bm25": 70.85,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6899,
+      "bm25": 32.47,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6048,
+      "bm25": 31.29,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 28.9,
+      "is_gold": false
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 9,
+      "kind": "text",
+      "sim": 0.5427,
+      "bm25": 34.09,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.6459,
+      "bm25": 25.95,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第三节 管理层讨论与分析",
+      "page": 10,
+      "kind": "text",
+      "sim": 0.5873,
+      "bm25": 26.38,
+      "is_gold": false
+     }
+    ]
+   },
+   "抽词+分组": {
+    "first_gold_rank": 5,
+    "hit": true,
+    "n_companies": 3,
+    "companies": [
+     "美的集团",
+     "海尔智家",
+     "格力电器"
+    ],
+    "ids": [
+     "000333_p26_00049",
+     "600690_p16_04822",
+     "000333_p12_00021",
+     "000333_p17_00030",
+     "000651_p57_t01205",
+     "000651_p59_t01216",
+     "600690_p15_04820",
+     "000651_p59_t01213"
+    ],
+    "top": [
+     {
+      "rank": 1,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 26,
+      "kind": "text",
+      "sim": 0.6599,
+      "bm25": 22.28,
+      "is_gold": false
+     },
+     {
+      "rank": 2,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 16,
+      "kind": "text",
+      "sim": 0.621,
+      "bm25": 17.31,
+      "is_gold": false
+     },
+     {
+      "rank": 3,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 12,
+      "kind": "text",
+      "sim": 0.6899,
+      "bm25": 15.14,
+      "is_gold": false
+     },
+     {
+      "rank": 4,
+      "company": "美的集团",
+      "section": "第三节 管理层讨论与分析",
+      "page": 17,
+      "kind": "text",
+      "sim": 0.6226,
+      "bm25": 14.83,
+      "is_gold": false
+     },
+     {
+      "rank": 5,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 57,
+      "kind": "table",
+      "sim": 0.5446,
+      "bm25": 15.71,
+      "is_gold": true
+     },
+     {
+      "rank": 6,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.5556,
+      "bm25": 14.42,
+      "is_gold": false
+     },
+     {
+      "rank": 7,
+      "company": "海尔智家",
+      "section": "第三节 管理层讨论与分析",
+      "page": 15,
+      "kind": "text",
+      "sim": 0.6048,
+      "bm25": 12.18,
+      "is_gold": false
+     },
+     {
+      "rank": 8,
+      "company": "格力电器",
+      "section": "第八节 财务报告",
+      "page": 59,
+      "kind": "table",
+      "sim": 0.5636,
+      "bm25": 13.04,
+      "is_gold": false
+     }
+    ]
+   }
+  }
+ }
+]
