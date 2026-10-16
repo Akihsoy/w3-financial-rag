@@ -157,7 +157,10 @@ $("#q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey)
 const _sp = new URLSearchParams(location.search);
 if (_sp.get("q")) {
   $("#q").value = _sp.get("q");
-  if (_sp.get("mode")) document.querySelector(`input[name=mode][value=${_sp.get("mode")}]`).checked = true;
+  // 注意：页面上只有 vector/bm25/hybrid/rewrite 四个选项；传了别的值要兜住，
+  // 否则 querySelector 返回 null 会直接抛错，整个脚本（包括自动提问）都不执行
+  const _m = _sp.get("mode") && document.querySelector(`input[name=mode][value=${_sp.get("mode")}]`);
+  if (_m) _m.checked = true;
   if (_sp.get("auto") === "1") setTimeout(ask, 800);
 }
 
