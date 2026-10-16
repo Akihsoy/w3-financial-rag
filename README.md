@@ -21,7 +21,7 @@
 ## 怎么跑起来
 
 ```bash
-pip install -r requirements.txt
+pip install -r scripts/requirements.txt
 
 # 1) 下载财报（约 31 MB；key 与网络都不需要）
 python scripts/01_download.py
